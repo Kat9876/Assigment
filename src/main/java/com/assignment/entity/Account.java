@@ -9,6 +9,15 @@ import javax.persistence.Id;
 @Entity
 public class Account {
 	
+	@Id
+	private String accountNumber;
+	
+	private BigDecimal balance;
+	
+	public Account() {
+		super();
+	}
+	
 	public Account(String accountNumber, BigDecimal balance) {
 		super();
 		this.accountNumber = accountNumber;
@@ -19,9 +28,6 @@ public class Account {
 		return accountNumber;
 	}
 
-	public Account() {
-		super();
-	}
 
 	public void setAccountNumber(String accountNumber) {
 		this.accountNumber = accountNumber;
@@ -34,11 +40,6 @@ public class Account {
 	public void setBalance(BigDecimal balance) {
 		this.balance = balance;
 	}
-
-	@Id
-	private String accountNumber;
-	
-	private BigDecimal balance;
 
 
 }
