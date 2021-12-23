@@ -1,6 +1,8 @@
 # Assigment
 Assignment
 
+Postman collection : Assignment.postman_collection.json
+
 Service default port : 8080
 
 
